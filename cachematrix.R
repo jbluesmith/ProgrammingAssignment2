@@ -8,7 +8,7 @@ makeCacheMatrix <- function(x = matrix()) {
             m <<- NULL
       }
       get <- function() x  #gets the value of the matrix from above
-      setinverse <- function(solve) m <<- solve  #sets the inverse of the matrix 
+      setinverse <- function(solve) m <<- solve  #sets the inverse of the matrix from the parent directory
       getinverse <- function() m    #gets the inverse of the matrix 
       list(set = set, get = get,    #creates a list of functions
            setinverse = setinverse,
